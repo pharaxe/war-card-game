@@ -14,4 +14,4 @@ This was made before JavaScript bundlers. So "installing" it involves:
 I've included the necessary library files in the repo.
 
 # Test
-There's a test page at `test.html`. This let me test the game without manually clicking or waiting around.
+There's a [test page](https://bensweedler.com/war-card-game/test.html) that runs the engine and displays text. This let me test the game without manually clicking or waiting around.

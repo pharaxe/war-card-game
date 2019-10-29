@@ -21,22 +21,22 @@ body
 #mainDiv
 {
    background-color: green;
-   display: block;
-   width: 1000px;
-   height: 500px;
+   width: 80vw;
    margin: auto;
-   margin-top: 40px;
+   margin-top: 3em;
    text-align: center;
 }
 
 #battlefield
 {
-border: solid;
+   border: solid;
    background-color: green;
-   display: block;
-   width: 300px;
-   height: 100%;
    margin: auto;
+   display: block;
+   max-width: 300px;
+   min-width: 20vw;
+   min-height: 70vh;
+   max-height: 500px;
 }
 
 #buttons
@@ -44,8 +44,19 @@ border: solid;
    position: absolute;
    background-color: green;
    display: block;
-   top: 200px;
-   left: 100px;
+   top: 20vh;
+   left: 10vw;
+}
+
+@media only screen and (max-width: 600px) {
+   img {
+      width: 50px!important;
+      height: 72px!important;
+   }
+
+   #mainDiv {
+      margin-top: 2em;
+   }
 }
 
 </style>

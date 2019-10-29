@@ -11,7 +11,7 @@ This was made before JavaScript bundlers. So "installing" it involves:
 1. Cloning the repo
 2. Pointing Apache or Nginx to the directoy to serve up `war.html`
 
-I've included the necessary libry files in the repo.
+I've included the necessary library files in the repo.
 
 # Test
 There's a test page at `test.html`. This let me test the game without manually clicking or waiting around.

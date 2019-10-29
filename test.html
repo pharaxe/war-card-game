@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<style type="text/css">
+td
+{
+   position: absolute;
+   vertical-align: top;
+   padding: 1em;
+}
+
+td#stack1
+{
+   left: 150px;
+}
+
+td#stack2
+{
+   left: 250px;
+}
+
+td#player1
+{
+   left: 20px;
+}
+
+td#player2
+{
+   left: 400px;
+}
+</style>
+</head>
+<body>
+<input type="button" value="drop 2 cards" onClick="game.cardDropped();game.cardDropped();game.print();">
+<span id="drop"> </span>
+&nbsp &nbsp Auto:
+<input id='check' type="checkbox" checked="false" onClick="game.toggleAuto(this.checked);">
+<input type="button" value="skip 100" onClick="game.skip();">
+<br />
+<pre>
+<table><tr>
+  <td id='player1'></td>
+  <td><table><tr>
+    <td id='stack1'></td>
+    <td id='stack2'></td>
+  </tr></table></td>
+  <td id='player2'></td>
+</tr></table>
+
+<script type="text/javascript" src="mootools-1.2.3-core-nc.js"></script>
+<script type="text/javascript" src="test.js"></script>
+
+
+<script type="text/javascript">
+var game = new GameEngine();
+game.print();
+
+</script>
+</pre>
+
+</body>
+</html>

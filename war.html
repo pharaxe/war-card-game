@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<script type="text/javascript" src="mootools-1.2.3-core-nc.js"></script>
+<script type="text/javascript" src="mootools-1.2.3.1-more.js"></script>
+<script type="text/javascript" src="card.js"></script>
+<script type="text/javascript" src="deck.js"></script>
+<script type="text/javascript" src="battlefield.js"></script>
+<script type="text/javascript" src="engine.js"></script>
+
+<style type="text/css">
+
+body
+{
+   text-align: center;
+   background-color: green;
+}
+
+#mainDiv
+{
+   background-color: green;
+   display: block;
+   width: 1000px;
+   height: 500px;
+   margin: auto;
+   margin-top: 40px;
+   text-align: center;
+}
+
+#battlefield
+{
+border: solid;
+   background-color: green;
+   display: block;
+   width: 300px;
+   height: 100%;
+   margin: auto;
+}
+
+#buttons
+{
+   position: absolute;
+   background-color: green;
+   display: block;
+   top: 200px;
+   left: 100px;
+}
+
+</style>
+
+
+<body>
+<div id="mainDiv"> <div id="battlefield"> </div> </div>
+<div id="buttons">
+<p>New game of War:</p>
+<p><input onClick="game.setUp(true, false, 1)" type='button' value='computer vs. player'></p>
+<p><input onClick="game.setUp(true, true, 1)" type='button' value='computer vs. computer'></p>
+<!--Images don't download fast enough for this option, oops<p><input onClick="game.setUp(true, true, .1)"type='button' value='computer vs. computer - hyper speed'></p>-->
+</div>
+
+<script type="text/javascript"> 
+game  = new GameEngine();
+</script>
+
+
+
+</body>
+</html>
+
+
